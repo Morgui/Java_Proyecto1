@@ -52,9 +52,9 @@ class HibridoServiceTest {
 	void testSaveCreateNullId() {
 		service.save(CarFacade.createHybridCar(null, "aqua", 5, "Kia Sportage"));
 		Hibrido result = service.findOne(6L);
-		assertEquals(result.getColor(), "aqua");
-		assertEquals(result.getNumberDoor(), 5);
-		assertEquals(result.getName(), "Kia Sportage");
+		assertEquals("aqua", result.getColor());
+		assertEquals(5, result.getNumberDoor());
+		assertEquals("Kia Sportage", result.getName());
 	}
 
 	@Order(4)
@@ -63,9 +63,9 @@ class HibridoServiceTest {
 	void testSaveCreateZero() {
 		service.save(CarFacade.createHybridCar(0L, "mostaza", 5, "Kia Sportage"));
 		Hibrido result = service.findOne(6L);
-		assertEquals(result.getColor(), "aqua");
-		assertEquals(result.getNumberDoor(), 5);
-		assertEquals(result.getName(), "Kia Sportage");
+		assertEquals("aqua", result.getColor());
+		assertEquals(5, result.getNumberDoor());
+		assertEquals("Kia Sportage", result.getName());
 	}
 
 	@Order(5)
@@ -77,7 +77,7 @@ class HibridoServiceTest {
 		service.save(result);
 
 		Hibrido updated = service.findOne(3L);
-		assertEquals(updated.getColor(), "mist");
+		assertEquals("mist", updated.getColor());
 	}
 
 	@Order(6)

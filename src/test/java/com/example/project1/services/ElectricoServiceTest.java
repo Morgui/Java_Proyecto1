@@ -53,9 +53,9 @@ class ElectricoServiceTest {
 	void testSaveCreateNullId() {
 		service.save(CarFacade.createElectricCar(null, "mostaza", 3, "Renault Captur"));
 		Electrico result = service.findOne(6L);
-		assertEquals(result.getColor(), "mostaza");
-		assertEquals(result.getNumberDoor(), 3);
-		assertEquals(result.getName(), "Renault Captur");
+		assertEquals("mostaza", result.getColor());
+		assertEquals(3, result.getNumberDoor());
+		assertEquals("Renault Captur", result.getName());
 	}
 	
 	@Order(4)
@@ -64,9 +64,9 @@ class ElectricoServiceTest {
 	void testSaveCreateZero() {
 		service.save(CarFacade.createElectricCar(0L, "mostaza", 3, "Renault Captur"));
 		Electrico result = service.findOne(6L);
-		assertEquals(result.getColor(), "mostaza");
-		assertEquals(result.getNumberDoor(), 3);
-		assertEquals(result.getName(), "Renault Captur");
+		assertEquals("mostaza", result.getColor());
+		assertEquals(3, result.getNumberDoor());
+		assertEquals("Renault Captur", result.getName());
 	}
 	
 	@Order(5)
@@ -78,7 +78,7 @@ class ElectricoServiceTest {
 		service.save(result);
 
 		Electrico updated = service.findOne(3L);
-		assertEquals(updated.getColor(), "azul cielo");
+		assertEquals("azul cielo", updated.getColor());
 	}
 	
 	@Order(6)

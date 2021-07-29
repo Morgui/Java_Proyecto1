@@ -30,7 +30,7 @@ public abstract class Car implements Arranque {
 	 * @param name       nombre
 	 * @param modelType  modelo
 	 */
-	public Car(Long id, String color, int numberDoor, String name, String modelType) {
+	protected Car(Long id, String color, int numberDoor, String name, String modelType) {
 		super();
 		this.id = id;
 		this.color = color;

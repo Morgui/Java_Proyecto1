@@ -8,7 +8,9 @@ public class CarFactory {
 	public static final String ELECTRICO = "Electric";
 	public static final String COMBUSTION = "Combustion";
 
-	public CarFactory() {}
+	public CarFactory() {
+		//se usa el constructor vacio para testear CarFactory
+	}
 
 	public static Car createByType(String type) {
 		

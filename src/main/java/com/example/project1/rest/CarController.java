@@ -7,10 +7,11 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import com.example.project1.services.CarFactory;
-
 /**
  * 
  * @author Luz D. Delgado
@@ -21,6 +22,8 @@ import com.example.project1.services.CarFactory;
 @Produces(MediaType.APPLICATION_JSON)
 public class CarController {
 
+	private final Logger log = LoggerFactory.getLogger(CarController.class);
+	
 	/**
 	 * http://localhost:8080/api/car/Combustion
 	 * http://localhost:8080/api/car/Electric
@@ -36,7 +39,7 @@ public class CarController {
 		try {
 			return Response.ok().entity(CarFactory.createByType(modelType)).build();
 		} catch (Exception e) {
-			System.out.println(e);
+			log.error("Error trying to create a car by type.", e);
 			return Response.status(Response.Status.NOT_FOUND).build();
 		}
 	}

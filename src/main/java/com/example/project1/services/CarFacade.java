@@ -5,7 +5,10 @@ import com.example.project1.models.components.*;
 
 public class CarFacade {
 
-	public CarFacade() {}
+	public CarFacade() {
+		//se usa el constructor vacio para testear CarFacade
+
+	}
 
 	/**
 	 * Crea un coche hibrido con sus componentes y lo enciede todo
@@ -31,7 +34,7 @@ public class CarFacade {
 		return coche;
 	}
 
-	/*
+	/**
 	 * Crea un coche de combustion con sus componentes y lo enciede todo
 	 * 
 	 */
@@ -55,7 +58,7 @@ public class CarFacade {
 
 	}
 
-	/*
+	/**
 	 * Crea un coche electrico con sus componentes y lo enciede todo
 	 * 
 	 */	

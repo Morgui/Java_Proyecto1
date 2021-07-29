@@ -51,9 +51,9 @@ class CombustionServiceTest {
 	void testSaveCreateNullId() {
 		service.save(CarFacade.createCombustionCar(null, "fosforito", 3, "Seat Leon"));
 		Combustion result = service.findOne(6L);
-		assertEquals(result.getColor(), "fosforito");
-		assertEquals(result.getNumberDoor(), 3);
-		assertEquals(result.getName(), "Seat Leon");
+		assertEquals("fosforito", result.getColor());
+		assertEquals(3, result.getNumberDoor());
+		assertEquals("Seat Leon", result.getName());
 	}
 
 	@Order(4)
@@ -62,9 +62,9 @@ class CombustionServiceTest {
 	void testSaveCreateZero() {
 		service.save(CarFacade.createCombustionCar(0L, "fosforito", 3, "Seat Leon"));
 		Combustion result = service.findOne(6L);
-		assertEquals(result.getColor(), "fosforito");
-		assertEquals(result.getNumberDoor(), 3);
-		assertEquals(result.getName(), "Seat Leon");
+		assertEquals("fosforito", result.getColor());
+		assertEquals(3, result.getNumberDoor());
+		assertEquals("Seat Leon", result.getName());
 	}
 
 	@Order(5)
@@ -76,7 +76,7 @@ class CombustionServiceTest {
 		service.save(result);
 
 		Combustion updated = service.findOne(3L);
-		assertEquals(updated.getColor(), "azul marino");
+		assertEquals("azul marino", updated.getColor());
 	}
 
 	@Order(6)

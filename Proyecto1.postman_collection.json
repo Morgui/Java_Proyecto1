@@ -1,0 +1,705 @@
+{
+	"info": {
+		"_postman_id": "ccb52caa-2571-4a50-9d85-b678806aecc1",
+		"name": "Proyecto1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Combustion",
+			"item": [
+				{
+					"name": "/api/combustion  findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/combustion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/combustion/2  findOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/combustion/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/combustion/color/rojo  findByColor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/combustion/color/rojo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion",
+								"color",
+								"rojo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/combustion/doors/5 findByDoorsNumber",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/combustion/doors/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion",
+								"doors",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/combustion/nombre/Opel%20Corsa   findByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/combustion/nombre/Opel%20Corsa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion",
+								"nombre",
+								"Opel%20Corsa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/combustion Create Combustion Car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"color\": \"rojo\",\n    \"numberDoor\": 3,\n    \"name\": \"Patatita\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/combustion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/combustion Update Combustion Car",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 3,\n    \"color\": \"naranja\",\n    \"numberDoor\": 3,\n    \"name\": \"Ford Fiesta\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/combustion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/combustion/1 deleteOne",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/combustion/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/combustion deleteAll",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/combustion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"combustion"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Electrico",
+			"item": [
+				{
+					"name": "/api/electrico  findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electrico",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/electrico/1  findOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electrico/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/electrico/color/negro  findByColor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electrico/color/negro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico",
+								"color",
+								"negro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/electrico/doors/5 findByDoorsNumber",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electrico/doors/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico",
+								"doors",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/electrico/nombre/Tesla   findByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electrico/nombre/Tesla",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico",
+								"nombre",
+								"Tesla"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/electrico Create Electric Car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"color\": \"cerulean\",\n    \"numberDoor\": 5,\n    \"name\": \"Audi e-tron\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/electrico",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/electrico Update Electrico Car",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 3,\n    \"color\": \"fosforito\",\n    \"numberDoor\": 3,\n    \"name\": \"Tesla\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/electrico",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/electrico/1 deleteOne",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electrico/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/electrico deleteAll",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electrico",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electrico"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hibrido",
+			"item": [
+				{
+					"name": "/api/hibrido  findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/hibrido/1  findOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/hibrido/color/pearl  findByColor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido/color/pearl",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido",
+								"color",
+								"pearl"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/hibrido/doors/5 findByDoorsNumber",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido/doors/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido",
+								"doors",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/hibrido/nombre/Kia%20Niro   findByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido/nombre/Kia%20Niro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido",
+								"nombre",
+								"Kia%20Niro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/hibrido  Create  Hibrido Car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"color\": \"gris\",\n    \"numberDoor\": 3,\n    \"name\": \"Kia Sorento\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/hibrido  Update Hibrido Car",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"color\": \"fosforito\",\n    \"numberDoor\": 5,\n    \"name\": \"Kia Sorento\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/hibrido/1 deleteOne",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/hibrido deleteAll",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hibrido",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hibrido"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/api/car/Combustion Car by type - CarFactory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/car/Combustion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"car",
+						"Combustion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/car/Electric Car by type - CarFactory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/car/Electric",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"car",
+						"Electric"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/car/Hybrid Car by type - CarFactory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/car/Hybrid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"car",
+						"Hybrid"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

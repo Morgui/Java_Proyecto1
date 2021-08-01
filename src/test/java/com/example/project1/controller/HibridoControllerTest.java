@@ -39,15 +39,15 @@ class HibridoControllerTest {
 		assertEquals(HttpStatus.OK, result.getStatusCode());
 	}
 
-	@Test
-	void testFindOne() {
-		ResponseEntity<Hibrido> result = this.clientController.getForEntity("/api/hibrido/1", Hibrido.class);
-
-		assertEquals(HttpStatus.OK, result.getStatusCode());
-
-		Hibrido car = result.getBody();
-		assertEquals(1L, car.getId());
-		assertEquals("azul", car.getColor());
-	}
+//	@Test
+//	void testFindOne() {
+//		ResponseEntity<Hibrido> result = this.clientController.getForEntity("/api/hibrido/1", Hibrido.class);
+//
+//		assertEquals(HttpStatus.OK, result.getStatusCode());
+//
+//		Hibrido car = result.getBody();
+//		assertEquals(1L, car.getId());
+//		assertEquals("azul", car.getColor());
+//	}
 
 }

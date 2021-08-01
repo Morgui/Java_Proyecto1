@@ -28,7 +28,7 @@ pipeline {
         }
         stage('Sonar') {
            steps {
-               sh 'mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar'
+               sh 'mvn verify sonar:sonar'
            }
         }
     }

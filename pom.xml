@@ -48,6 +48,11 @@
 		<java.version>16</java.version>
 		<maven.compiler.source>14</maven.compiler.source>
 		<maven.compiler.target>14</maven.compiler.target>
+
+		<!-- Sonar -->
+		<sonar.projectKey>Morgui_Java_Proyecto1</sonar.projectKey>
+		<sonar.organization>morgui</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
 	<!-- Dependencias base Spring -->
@@ -69,7 +74,7 @@
 			<scope>test</scope>
 		</dependency>
 
-	<!-- Dependencias añadidas -->
+		<!-- Dependencias añadidas -->
 		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
@@ -120,7 +125,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				
+
 				<executions>
 					<execution>
 						<id>attach-javadocs</id>

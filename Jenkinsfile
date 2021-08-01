@@ -28,7 +28,7 @@ pipeline {
         }
         stage('Sonar') {
            steps {
-               sh 'mvn verify sonar:sonar -Dsonar.projectKey=Morgui_Java_Proyecto1 -Dsonar.organization=morgui -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=97994c5a2ec5b351c768e7537072df0d28079b33'
+               sh 'mvn verify sonar:sonar'
            }
         }
     }

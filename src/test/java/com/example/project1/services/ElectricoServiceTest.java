@@ -160,7 +160,7 @@ class ElectricoServiceTest {
 	@DisplayName("Test que comprueba el lastID")
 	// Una vez que la lista este vacia debe generarse un objeto nuevo con id 1
 	void getLastId() {
-		Electrico car = service.save(CarFacade.createElectricCar(null, "mostaza", 3, "Renault Captur"));
+		Electrico car = service.save(CarFacade.createElectricCar(null, "verde", 3, "Renault Captur"));
 		assertEquals(1L, car.getId());
 
 	}

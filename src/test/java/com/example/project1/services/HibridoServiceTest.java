@@ -159,7 +159,7 @@ class HibridoServiceTest {
 	@DisplayName("Test que comprueba el lastID")
 	// Una vez que la lista este vacia debe generarse un objeto nuevo con id 1
 	void getLastId() {
-		Hibrido car = service.save(CarFacade.createHybridCar(null, "aqua", 5, "Kia Sportage"));
+		Hibrido car = service.save(CarFacade.createHybridCar(null, "azul", 5, "Kia Sportage"));
 		assertEquals(1L, car.getId());
 
 	}

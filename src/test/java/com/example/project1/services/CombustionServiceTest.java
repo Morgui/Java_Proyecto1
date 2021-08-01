@@ -159,8 +159,7 @@ class CombustionServiceTest {
 	@DisplayName("Test que comprueba el lastID")
 	// Una vez que la lista este vacia debe generarse un objeto nuevo con id 1
 	void getLastId() {
-		Combustion car = service.save(CarFacade.createCombustionCar(null, "fosforito", 5, "Seat Leon"));
+		Combustion car = service.save(CarFacade.createCombustionCar(null, "rojo", 5, "Seat Leon"));
 		assertEquals(1L, car.getId());
-
 	}
 }

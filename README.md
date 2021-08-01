@@ -54,3 +54,14 @@
 	* Visualización cobertura tras las correcciones realizadas
 	* Realización de Reporte, el cual se adjunta al zip junto este proyecto
 	
+## Actualización del proyecto con la realización del proyecto 4 CI/CD
+	* Creación de un archivo Jenkinsfile con sus correspondientes stages (build, test, sonar..)
+	* Modificación del pom con las properties necesarias
+	* Creación de un pipeiline con Jenkins en Blue Ocean, leyendo el proyecto desde el repositorio github y comprobar que funcione correctamente.
+	* Ejecutar Sonar Cloud y verificar los datos en su dashboard
+	* Arreglo de los fallos (blocker, major y critical)
+	* Creación de algunos nuevos tests para comprobar y mejorar la cobertura
+	* Cambiar el proyecto en Sonar Cloud, añadiendo un workflow de GitHub Actions
+	* Comprobaciones de que funciona, ejecutando y analizandose ahora con GitHub Actions
+
+	
